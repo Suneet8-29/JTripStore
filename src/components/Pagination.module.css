@@ -1,0 +1,37 @@
+.container {
+    color : white;
+    float: right;
+     margin-left: 75%;
+}
+
+.pageBar{
+    display: flex;
+    flex-direction: row;
+     cursor: pointer;
+}
+
+.pageBar li {
+    margin-top: 75%;
+    margin-right: 30%;
+    padding: 10% 40%;
+    border: 2px solid #252627;
+    border-radius: 12px;
+    font-weight: 600;
+    background-color: #252627;
+ }
+
+.pageBar li:nth-child(1){
+    background-color: lightblue !important;
+    color: black;
+}
+
+.pageBar li:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.btnChange {
+    background-color: lightblue !important;
+    color: black;
+    
+}

@@ -1,0 +1,20 @@
+.img {
+    max-width: 100%;
+    height: auto
+}
+
+.mod {
+    border-radius: 10px;
+}
+
+.imgContainer{
+    width : 85vw !important;
+    height : 70vh !important;
+}
+
+.imp {
+    width : fit-content !important
+}
+
+
+

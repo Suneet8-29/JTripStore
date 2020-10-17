@@ -1,0 +1,49 @@
+.links {
+    position: absolute;
+    width: 30%;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: white; 
+    padding: 0.7rem 0;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.links a:hover{
+    color: aqua;
+}
+
+.linkAnimate {
+    animation: appear 0.5s forwards ease 0.2s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translate(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+

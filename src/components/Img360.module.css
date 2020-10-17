@@ -1,0 +1,108 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    row-gap: 8%;
+    align-items: center;
+       
+ }
+
+.box{
+    width: 215px;
+    height: 215px;
+    border: 5px solid #252627;
+    border-radius: 7%;
+    position: relative;
+    transition: width, height, border-radius;
+    transition-duration: 0.5s;
+   }
+
+   
+ /* .box:hover{
+     height : 300px;
+     width : 500px;
+     border-radius: 10%;
+     border: 5px solid;
+     cursor : pointer;
+     animation-name: border-run;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+
+    .box:hover .iframe_button {
+        display: initial;
+    } */
+
+     
+
+
+  @keyframes border-run{
+    0%{
+          border-top-color: rgb(58, 4, 58);
+          border-right-color: rgb(87, 6, 87);
+          border-bottom-color: rgb(121, 9, 121);
+          border-left-color: rgb(194, 16, 194);
+          
+    }
+    25%{  
+          border-top-color: rgb(194, 16, 194);
+          border-right-color: rgb(58, 4, 58);
+          border-bottom-color: rgb(87, 6, 87);
+          border-left-color: rgb(121, 9, 121);
+          
+    }
+    50%{
+          border-top-color: rgb(121, 9, 121) ;
+          border-right-color: rgb(194, 16, 194);
+          border-bottom-color: rgb(58, 4, 58);
+          border-left-color: rgb(87, 6, 87);
+          
+    }
+    75%{
+          border-top-color: rgb(87, 6, 87);
+          border-right-color: rgb(121, 9, 121);
+          border-bottom-color:rgb(194, 16, 194);
+          border-left-color: rgb(58, 4, 58);
+          
+    }
+    100%{
+          border-top-color: rgb(58, 4, 58);
+          border-right-color: rgb(87, 6, 87);
+          border-bottom-color: rgb(121, 9, 121);
+          border-left-color: rgb(194, 16, 194);          
+    }
+  }
+
+  .divContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+  }
+
+  .iframe_button {
+    z-index: -1;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    background-color: #252627;
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    height: 1.4rem;
+    width: 5rem;
+    outline: none;
+    padding: 3px;  
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+   
+     
+ 
