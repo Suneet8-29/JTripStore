@@ -2,7 +2,7 @@ import React, {useRef, useState} from 'react'
 import classes from './Landing.module.css'
 import Header from './Header'
 import Links from './Links'
-import Logo from '../images/Logo.png'
+// import Logo from '../images/Logo.png'
  
 function Landing() {
     const containerRef = useRef('');
@@ -47,7 +47,7 @@ function Landing() {
         <div ref={containerRef} className={classes.container}>
             <div className={classes.navbar}>
                 <div className={classes.menu}>
-                    <h3 className={classes.logo} >cool</h3>
+                    <h3 className={classes.logo} >J<span>Tr!p</span>Store</h3>
                     <div className={classes.hamburger_menu} onClick={hamburgerMenuOnClick}>
                         <div ref={bar1Ref} className={renderAnimation1()} ></div>
                         <div className={renderAnimation2()}></div>

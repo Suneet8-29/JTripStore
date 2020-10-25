@@ -43,7 +43,6 @@ function Pictures(props) {
             if (user) {
                     props.signInCheck({ displayName : user.displayName,
                     photoURL : user.photoURL });
-                
             }
             else {
                 props.signOut();
@@ -51,6 +50,7 @@ function Pictures(props) {
                 
         })
       
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     useEffect(() => {
@@ -95,9 +95,9 @@ function Pictures(props) {
                 <div className={classes.menuBar}>                    
                     <select onChange={(e)=>setDDLValue(e.target.value)} className={classes.dropdown} name="tripSelect" id="trip">
                     <option value="Damdamani">Damdamani</option>
-                    <option value="Deojhar">Deojhar</option>
-                    <option value="Banki">Banki</option>
-                    <option value="Ansupa">Ansupa</option>
+                    <option value="PandabaBakhara">Pandaba Bakhara</option>
+                    {/* <option value="Banki">Banki</option>
+                    <option value="Ansupa">Ansupa</option> */}
                     </select>
                     <Pagination currentPage={(number)=>setCurrentPage(number)} images={images.length} postsPerPage={postsPerPage} ></Pagination>
                 </div>

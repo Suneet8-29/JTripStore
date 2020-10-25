@@ -22,13 +22,11 @@ function Header(props) {
             }
             else {
                 props.signOut();
-            }
-             
+            }           
         })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
-
-    
-
+ 
     const renderAnimation = () => {
         if (props.active) {
             return `${classes.main} ${classes.changeMain}`
@@ -63,7 +61,7 @@ function Header(props) {
                 <br/>
                 <div>
                 <button className='ui red google button' onClick={() => props.signOut()}>
-                    <i className='google icon'  />
+                    <i className='google icon'/>
                     Sign Out
                 </button>
                 </div>

@@ -111,7 +111,7 @@ function UploadImage(props) {
                                      <div className="ui card" style={{width : 'inherit'}}>
                                             <div className="content">
                                                 <div className="right floated" onClick={()=>setmodalIsOpen(false)} ><i className="window close icon"></i></div>
-                                                 Paste the Insta360 link 
+                                                 Paste the Insta360 link (Exclude https://) 
                                             </div>
                                             <div className="image">
                                              </div>
